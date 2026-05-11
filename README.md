@@ -118,14 +118,15 @@
 
 关键文件：
 
-- [MainActivity.kt](/Users/xiangbin/Desktop/Human_Acupuncture%20Points/app/src/main/java/com/humanacupoints/demo/MainActivity.kt)
-- [BackOverlayView.kt](/Users/xiangbin/Desktop/Human_Acupuncture%20Points/app/src/main/java/com/humanacupoints/demo/overlay/BackOverlayView.kt)
-- [DemoBackModel.kt](/Users/xiangbin/Desktop/Human_Acupuncture%20Points/app/src/main/java/com/humanacupoints/demo/model/DemoBackModel.kt)
-- [PayloadFormatter.kt](/Users/xiangbin/Desktop/Human_Acupuncture%20Points/app/src/main/java/com/humanacupoints/demo/model/PayloadFormatter.kt)
-- [PayloadViewerActivity.kt](/Users/xiangbin/Desktop/Human_Acupuncture%20Points/app/src/main/java/com/humanacupoints/demo/PayloadViewerActivity.kt)
-- [DeviceReceiverActivity.kt](/Users/xiangbin/Desktop/Human_Acupuncture%20Points/app/src/main/java/com/humanacupoints/demo/DeviceReceiverActivity.kt)
-- [activity_main.xml](/Users/xiangbin/Desktop/Human_Acupuncture%20Points/app/src/main/res/layout/activity_main.xml)
-- [PROJECT_DOC.md](/Users/xiangbin/Desktop/Human_Acupuncture%20Points/PROJECT_DOC.md)
+- [MainActivity.kt](app/src/main/java/com/humanacupoints/demo/MainActivity.kt)
+- [BackOverlayView.kt](app/src/main/java/com/humanacupoints/demo/overlay/BackOverlayView.kt)
+- [DemoBackModel.kt](app/src/main/java/com/humanacupoints/demo/model/DemoBackModel.kt)
+- [PayloadFormatter.kt](app/src/main/java/com/humanacupoints/demo/model/PayloadFormatter.kt)
+- [PayloadViewerActivity.kt](app/src/main/java/com/humanacupoints/demo/PayloadViewerActivity.kt)
+- [DeviceReceiverActivity.kt](app/src/main/java/com/humanacupoints/demo/DeviceReceiverActivity.kt)
+- [activity_main.xml](app/src/main/res/layout/activity_main.xml)
+- [PROJECT_DOC.md](PROJECT_DOC.md)
+- [docs/DEMO_GUIDE.md](docs/DEMO_GUIDE.md)
 
 ## 本地运行
 
@@ -153,69 +154,11 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 adb shell am start -n com.humanacupoints.demo/.MainActivity
 ```
 
-## 演示建议
+## 文档
 
-如果你是拿去给客户或团队演示，建议这样讲：
+- [PROJECT_DOC.md](PROJECT_DOC.md)：项目目标、定位模型、JSON 结构、页面职责
+- [docs/DEMO_GUIDE.md](docs/DEMO_GUIDE.md)：演示建议、已知边界、后续路线
 
-1. 先强调这不是“自动医疗定穴”，而是“背部穴位数字化演示能力”
-2. 说明系统先做人背轮廓定位，再推算其余穴位
-3. 锁定后选一个穴位
-4. 展示该穴位 JSON
-5. 点击发送到模拟设备
-6. 展示设备已接收结果
+## License
 
-这样最容易让人理解：
-
-- 输入是什么
-- 中间计算了什么
-- 输出能给谁用
-
-## 已知边界
-
-当前版本有明确边界：
-
-- 没有自动人体分割
-- 没有自动骨性标志识别
-- 没有深度信息
-- 没有机器人坐标转换
-- 没有安全力控
-- 没有真实设备通信协议
-
-它当前是一个`展示版交互原型`，不是最终机器人控制系统。
-
-## 开源建议
-
-这个项目适合开源。
-
-原因很直接：
-
-- 演示目标清晰
-- 不依赖私有后端
-- 不依赖医疗数据集
-- 没有企业内部协议耦合
-- 对外部开发者有参考价值
-
-比较适合的 GitHub 仓库定位：
-
-- `android back acupoint demo`
-- `rehab robot acupoint visualization demo`
-- `manual body alignment + acupoint overlay`
-
-建议在 GitHub 描述里明确写上：
-
-- 这是演示原型，不是医疗产品
-- 当前使用规则映射，不是临床级穴位识别
-- 欢迎基于此继续接 AI 模型或机器人协议
-
-## 后续路线
-
-如果后续继续做，最值得投入的方向是：
-
-1. 自动背部锚点检测
-2. 多穴位治疗序列
-3. 真实设备接口
-4. 相机坐标到机器人坐标转换
-5. 深度/三维定位
-6. 安全区域与力控策略
-
-详细说明见 [PROJECT_DOC.md](/Users/xiangbin/Desktop/Human_Acupuncture%20Points/PROJECT_DOC.md)。
+MIT

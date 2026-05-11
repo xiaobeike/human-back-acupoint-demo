@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="surface_dark">#0F1115</color>
+    <color name="text_primary">#F5F7FA</color>
+    <color name="text_secondary">#C2CBD6</color>
+    <color name="accent">#F6C85F</color>
+    <color name="accent_secondary">#4EC5B7</color>
+    <color name="danger_zone">#FF7A6B</color>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Back Acupoint Demo</string>
+    <string name="demo_title">背部穴位演示 Demo</string>
+    <string name="demo_subtitle">CameraX 预览 + 背部锚点 + 穴位蒙层 + 冻结微调</string>
+    <string name="status_live">实时模式</string>
+    <string name="status_frozen">冻结校准模式</string>
+    <string name="hint_live">先让背部处于画面中央，再点击“冻结画面”进入校准。</string>
+    <string name="hint_frozen">拖动黄色锚点微调肩点与中线，穴位会按规则同步更新。</string>
+    <string name="action_freeze">冻结画面</string>
+    <string name="action_resume">继续预览</string>
+    <string name="action_reset">重置锚点</string>
+    <string name="camera_permission_denied">需要相机权限才能预览背部演示画面。</string>
+</resources>

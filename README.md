@@ -1,5 +1,7 @@
 # Human Back Acupoint Demo
 
+![Demo Screenshot](assets/screenshots/demo-screen.png)
+
 一个面向`理疗机器人/康复设备能力展示`的 Android 原生 Demo。
 
 这个项目不是临床级自动定穴系统，也不是已经接好真实机器人协议的产品版本。它当前解决的是一条更适合演示和方案验证的链路：
